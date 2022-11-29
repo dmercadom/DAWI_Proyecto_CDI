@@ -14,7 +14,7 @@
 	crossorigin="anonymous" />
 </head>
 <body
-	class="bg-info d-flex justify-content-center align-items-center vh-100">
+	class="bg-dark d-flex justify-content-center align-items-center vh-100">
 	<form action="validar" method="post" th:object="${usuario}">
 		<div class="bg-white p-5 rounded-5 text-secondary shadow"
 			style="width: 25rem">
@@ -23,7 +23,7 @@
 			</div>
 			<div class="text-center fs-1 fw-bold">Ingreso</div>
 			<div class="input-group mt-4">
-				<div class="input-group-text bg-info">
+				<div class="input-group-text bg-dark">
 					<img src="/img/username-icon.svg" alt="username-icon"
 						style="height: 1rem" />
 				</div>
@@ -31,7 +31,7 @@
 					placeholder="Correo" th:field="*{correo}"/>
 			</div>
 			<div class="input-group mt-1">
-				<div class="input-group-text bg-info">
+				<div class="input-group-text bg-dark">
 					<img src="/img/password-icon.svg" alt="password-icon"
 						style="height: 1rem" />
 				</div>
@@ -43,11 +43,11 @@
 			</div>
 			
 			
-			<button type="submit" class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm">
+			<button type="submit" class="btn btn-dark text-white w-100 mt-4 fw-semibold shadow-sm">
 				Ingresar</button>
 			<div class="d-flex gap-1 justify-content-center mt-1">
-				<div>¿No tiene una cuenta?</div>
-				<a href="#" class="text-decoration-none text-info fw-semibold">Registrarse</a>
+				<!--<div>¿No tiene una cuenta?</div>
+				<a href="/registrar" class="text-decoration-none text-info fw-semibold">Registrarse</a>-->
 			</div>
 			
 		</div>

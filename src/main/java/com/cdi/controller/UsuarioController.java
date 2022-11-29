@@ -19,9 +19,7 @@ public class UsuarioController {
 	
 	@GetMapping("/login")
 	public String abrirPagLogin(Model model) {
-
 		model.addAttribute("usuario", new Usuario());
-
 		return "Index";
 	}
 	
