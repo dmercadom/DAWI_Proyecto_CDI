@@ -1,4 +1,3 @@
-<
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
@@ -73,18 +72,7 @@
 									th:text="${c.genero}"></option>
 							</select>
 						</div>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav me-left mb-2 mb-lg-0">
-								<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
-									data-bs-toggle="dropdown" aria-expanded="false">Genero</a>
-									<ul class="dropdown-menu dropdown-menu-dark">
-										<li><a class="dropdown-item">Seleccione...</a></li>
-										<li><a th:each="c : ${lstGenero}" th:value="${c.idgeneros}"
-									th:text="${c.genero}">Egreso/ingreso</a></li>
-
-									</ul></li>
-							</ul>
-						</div>
+						
 						<br>
 						<button type="submit" class="btn btn-dark">Registrar</button>
 						<a href="/cargarProd" class="btn btn-dark">Nuevo</a>
